@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ravi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="main-title">Happy Birthday Ravi ❤️</h1>
+            <p class="subtitle">A special day for the most special person in my life</p>
+            <p class="from-text">From Harini with love</p>
+            <button class="cta-button" onclick="startSurprise()">Start the Surprise</button>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section" id="countdown">
+        <div class="container">
+            <h2 class="section-title">Time Until Your Special Day</h2>
+            <div class="countdown-timer" id="countdownTimer">
+                <div class="time-box">
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-box">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-box">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section class="love-letter-section" id="loveLetter">
+        <div class="container">
+            <div class="letter-card">
+                <h2 class="letter-title">A Letter For You</h2>
+                <div class="letter-content">
+                    <p>Happy Birthday Ravi ❤️</p>
+                    <p>You are the most amazing person in my life. Every moment with you is special and unforgettable. I hope this small website reminds you how much you mean to me.</p>
+                    <p>May this birthday bring you happiness, success, and endless love. You deserve all the wonderful things this world has to offer.</p>
+                    <p>Thank you for being you, for making me smile, and for filling my days with joy.</p>
+                    <p class="signature">With all my love,<br>Harini 💕</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Moments</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <div class="gallery-placeholder">📷</div>
+                    <div class="gallery-overlay">Click to view</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <div class="gallery-placeholder">📷</div>
+                    <div class="gallery-overlay">Click to view</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <div class="gallery-placeholder">📷</div>
+                    <div class="gallery-overlay">Click to view</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <div class="gallery-placeholder">📷</div>
+                    <div class="gallery-overlay">Click to view</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <div class="gallery-placeholder">📷</div>
+                    <div class="gallery-overlay">Click to view</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <div class="gallery-placeholder">📷</div>
+                    <div class="gallery-overlay">Click to view</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-placeholder" id="lightboxImage">📷</div>
+        </div>
+    </div>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <h2 class="section-title">Our Journey Together</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>The Day We Met</h3>
+                        <p>The moment that changed everything ✨</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Our First Photo Together</h3>
+                        <p>Captured memories that we'll treasure forever 📸</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Our Favourite Trip</h3>
+                        <p>Adventures and laughter all the way 🌍</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Our Funniest Moment</h3>
+                        <p>When we couldn't stop laughing 😂</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Today – Your Birthday 🎂</h3>
+                        <p>Celebrating the amazing person you are!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surprise Button Section -->
+    <section class="surprise-section" id="surprise">
+        <div class="container">
+            <button class="surprise-button" onclick="triggerSurprise()">Click for Your Surprise</button>
+            <div class="surprise-message" id="surpriseMessage">
+                <p>Ravi, you are my favourite person in the world ❤️</p>
+                <p>Happy Birthday!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ by Harini</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
