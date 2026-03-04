@@ -58,8 +58,19 @@ function startSurprise() {
 }
 
 // Gallery Lightbox
+const galleryImages = [
+    'C:\\Users\\kabilan j\\OneDrive\\Desktop\\new\\WhatsApp Image 2026-03-04 at 12.32.07 (1).jpeg',
+    'C:\\Users\\kabilan j\\OneDrive\\Desktop\\new\\WhatsApp Image 2026-03-04 at 12.32.07.jpeg',
+    'C:\\Users\\kabilan j\\OneDrive\\Desktop\\new\\WhatsApp Image 2026-03-04 at 12.32.08.jpeg',
+    'C:\\Users\\kabilan j\\OneDrive\\Desktop\\new\\WhatsApp Image 2026-03-04 at 12.34.53.jpeg',
+    'C:\\Users\\kabilan j\\OneDrive\\Desktop\\new\\WhatsApp Image 2026-03-04 at 12.34.55.jpeg',
+    'C:\\Users\\kabilan j\\OneDrive\\Desktop\\new\\WhatsApp Image 2026-03-04 at 12.34.57.jpeg'
+];
+
 function openLightbox(index) {
     const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    lightboxImage.src = galleryImages[index];
     lightbox.classList.add('active');
 }
 
